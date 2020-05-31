@@ -1,0 +1,39 @@
+// Esto es una clase. Las classes empiezan con un punto.
+.login {
+  // El elemento que use esta clase tendrá:
+  width: 300px;        // un ancho de 500 pixeles.
+  margin: 100px auto 0;// margen de 50px arriba, auto a los lados y 0 abajo.
+  border: 1px solid #d4d4d4;  // un borde de 1px de grosor, sólido y gris.
+  padding: 30px 20px;  // padding de 30px arriba y abajo, y 20px a los lados.
+  border-radius: 10px; // un borde no tan cuadrado.
+ }
+
+ // agregamos una nueva clase title para el titulo del login
+ .title{
+   text-align: center; // centra el texto
+   margin-top: 0;      // quita el margen de arribade l tag <h1>
+ }
+
+ // agregamos nuevas clases para los contenedores de los labels
+ .credentials-container{
+   margin-bottom: 10px;  // Margen inferior de 10px
+
+   // Este input sin un punto antes hace referencia a una etiqueta.
+   // Significa que css aplicara un estilo definido a esta etiqueta.
+   // haremos lo mismo para label
+   input{                // A todos los imputs que la clase encuentre...
+     display: block;         // pongalos en un bloque separado,
+     width: 100%;            // alargue su editor de texto,
+     padding: 5px 10px;      // agregue margenes internos,
+     box-sizing: border-box; // limite su ancho al box del login.
+   }
+
+   label{
+     font-size: 12px; // agrande el tamaño de letra
+   }
+ }
+
+ .login-btn{
+   display: block; // ponga el boton en un solo bloque
+   margin: auto;   // centrelo
+ }

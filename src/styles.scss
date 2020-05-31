@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+$btn-primary-color: #cc3a3a;
+
+// Esto significa que todo lo que va a estar escrito
+// dentro de los corchetes va a ser aplicado al body y a html
+body,
+html {
+  margin: 0; // quitar todos los margenes
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+// crear una clase global para todos los botones de la aplicacion
+.btn-primary{
+  background: $btn-primary-color;
+  padding: 5px 10px;
+  border: 0;
+  color: white;     // Color del texto
+  border-radius: 5px;
+  min-width: 100px;   // ancho minimo del boton
+  &:disabled{
+    background: gainsboro;
+  }
+}
