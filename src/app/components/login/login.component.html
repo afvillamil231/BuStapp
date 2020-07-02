@@ -1,7 +1,7 @@
 <div class="login">
   <h1 class="title">Login</h1>
 
-  <form [formGroup]="loginForm">
+  <form [formGroup]="loginForm" (ngSubmit)="goToLogin()">
 
     <div class="credentials-container">
       <label for="email">Usuario</label>
@@ -19,11 +19,13 @@
              formControlName="pass"/>
     </div>
 
-    <button class="btn-primary login-btn" [disabled]="loginForm.invalid">
+    <button
+      class="btn-primary login-btn"
+      [disabled]="loginForm.invalid">
       Entrar
     </button>
-  </form>
+    {{ errorMsg }}
 
-  {{loginForm.value | json}}
+  </form>
 
 </div>
